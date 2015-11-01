@@ -10,7 +10,7 @@ var contactForm = contactSection.querySelector('form'),
       sendButton.innerHTML = 'sending..';
 
       var xhr = new XMLHttpRequest();
-      xhr.open('POST', '//formspree.io/arcpato@gmail.com', true);
+      xhr.open('POST', '//formspree.io/cynwhite87@gmail.com', true);
       xhr.setRequestHeader("Accept", "application/json")
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
 
