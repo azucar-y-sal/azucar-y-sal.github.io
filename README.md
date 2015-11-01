@@ -1,2 +1,2 @@
-# azucar-y-sal.github.io
+# azucar-y-sal
 Pagina para Azucar y Sal, mesas dulces y canapes.
