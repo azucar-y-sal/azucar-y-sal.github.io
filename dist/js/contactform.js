@@ -1,7 +1,7 @@
 var contactForm = contactSection.querySelector('form'),
-    inputName = contactForm.querySelector('[name="name"]'),
-    inputEmail = contactForm.querySelector('[name="contact"]'),
-    textAreaMessage = contactForm.querySelector('[name="message"]'),
+    inputName = contactForm.querySelector('[name="nombre"]'),
+    inputEmail = contactForm.querySelector('[name="contacto"]'),
+    textAreaMessage = contactForm.querySelector('[name="mensaje"]'),
     sendButton = contactForm.querySelector('[name="submit"]');
 
     sendButton.addEventListener('click', function(event){
