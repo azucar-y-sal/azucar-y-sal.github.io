@@ -113,6 +113,7 @@ fieldset[disabled] .btn-default.active {
   background-repeat: repeat-x;
   border-color: #783258;
 }
+.btn-primary:hover, btn-primary:focus,
 .btn-primary.active.focus, .btn-primary.active:focus,
 .btn-primary.active:hover, .btn-primary:active.focus,
 .btn-primary:active:focus, .btn-primary:active:hover  {
@@ -357,10 +358,27 @@ fieldset[disabled] .btn-danger.active {
   color:  #ac487e;
 }
 
+.logo {
+  font-family: 'Tangerine', cursive;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+@media (min-width: 768px){
+    .logo {
+
+      font-size: 60px;
+    }
+}
+
 .navbar-brand{
     font-family: 'Tangerine', cursive;
     font-weight: bold;
     font-size: 36px;
+}
+
+.rosa {
+  color:#ac487e;
 }
 
 .navbar-brand,
@@ -599,6 +617,83 @@ a:hover, a:active {
   color: #893964;
 }
 
-footer {
-  vertical-align: text-bottom;
+.mv{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mb{
+  margin-bottom: 20px;
+}
+
+.mt{
+  margin-top: 20px;
+}
+
+.mv-small{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mb-small{
+  margin-bottom: 10px;
+}
+
+.mt-small{
+  margin-top: 10px;
+}
+
+
+.mv-large{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mb-large{
+  margin-bottom: 30px;
+}
+
+.mt-large{
+  margin-top: 30px;
+}
+
+
+.pv{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pb{
+  padding-bottom: 20px;
+}
+
+.pt{
+  padding-top: 20px;
+}
+
+.pv-small{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pb-small{
+  padding-bottom: 10px;
+}
+
+.pt-small{
+  padding-top: 10px;
+}
+
+
+.pv-large{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pb-large{
+  padding-bottom: 30px;
+}
+
+.pt-large{
+  padding-top: 30px;
 }
