@@ -697,3 +697,13 @@ a:hover, a:active {
 .pt-large{
   padding-top: 30px;
 }
+
+.tile {
+  margin-right:5px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border: 1px solid gray;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+}
