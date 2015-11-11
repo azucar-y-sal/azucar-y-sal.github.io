@@ -4957,17 +4957,20 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+  background-image: url("../img/cupcakes3.jpg");
+background-size: cover;
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: white;
+  text-shadow: 2px 2px #494848;
 }
 .jumbotron p {
+  color: white;
+  text-shadow: 2px 1px #494848;
   margin-bottom: 15px;
   font-size: 21px;
-  font-weight: 200;
+  font-weight: bold;
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;

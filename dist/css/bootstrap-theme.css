@@ -710,7 +710,7 @@ a:hover, a:active {
 }
 
 .tile-image {
-  margin: 20px;
+  margin: 30px;
   padding:0;
   background-color: #f8f8f8;
   border: 1px solid  #e7e7e7;
@@ -721,4 +721,9 @@ a:hover, a:active {
 
 .tile-content{
   margin:10px;
+}
+
+.price {
+  font-weight: bold;
+  color:#ac487e;
 }
