@@ -702,8 +702,23 @@ a:hover, a:active {
   margin-right:5px;
   margin-top: 20px;
   padding-bottom: 10px;
-  border: 1px solid gray;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+  background-color: #f8f8f8;
+  border: 1px solid  #e7e7e7;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+}
+
+.tile-image {
+  margin: 20px;
+  padding:0;
+  background-color: #f8f8f8;
+  border: 1px solid  #e7e7e7;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+}
+
+.tile-content{
+  margin:10px;
 }
