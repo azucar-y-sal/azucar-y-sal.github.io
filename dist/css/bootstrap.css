@@ -4957,21 +4957,29 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  background-image: url("../img/cupcakes3.jpg");
-background-size: cover;
+  background-image: url("../img/cupcakes3_dark1.png");
+  background-size: cover;
+}
+.jumbotron::before{
+  background-color: rgba(0,0,0,0.3);
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: white;
-  text-shadow: 2px 2px #494848;
+  text-shadow: 2px 2px #000;
 }
 .jumbotron p {
   color: white;
-  text-shadow: 2px 1px #494848;
+  text-shadow: 2px 1px #000;
   margin-bottom: 15px;
   font-size: 21px;
-  font-weight: bold;
+
 }
+
+.shaded-background{
+      background-color: rgba(0,0,0,0.3);
+}
+
 .jumbotron > hr {
   border-top-color: #d5d5d5;
 }
