@@ -42,6 +42,7 @@ body {
 
 .marketing {
   margin-top: 60px;
+  color:black;
 }
 
 /* Center align the text within the three columns below the carousel */
@@ -50,7 +51,8 @@ body {
   text-align: center;
 }
 .marketing h2 {
-  font-weight: normal;
+  font-weight: bold;
+
 }
 .marketing .col-lg-4 p {
   margin-right: 10px;
@@ -67,6 +69,7 @@ body {
 
 /* Thin out the marketing headings */
 .featurette-heading {
+  font-size:30px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;

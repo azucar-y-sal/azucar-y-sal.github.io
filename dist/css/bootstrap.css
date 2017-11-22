@@ -8,6 +8,7 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+
 }
 body {
   margin: 0;
@@ -1082,10 +1083,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
   line-height: 1.42857143;
-  color: #333;
+  color: black;
   background-color: #fff;
 }
 input,
@@ -4348,6 +4349,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
+
 }
 @media (min-width: 768px) {
   .navbar-nav {
@@ -4495,18 +4497,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: black;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: black;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #777;
+  color: black;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: black;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -4957,23 +4959,62 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  background-image: url("../img/cupcakes3_dark1.png");
+  background-color: #eb6baf;
   background-size: cover;
 }
+
+.jumbotron-secondary {
+  background-color: #70a093;
+}
+
+.section-title{
+  font-size: 30px !important;
+}
+
+.body-text{
+  font-size: 20px !important;
+  margin-bottom: 0;
+}
+
+.tertiary-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  font-size: 20px !important;
+}
+
+.footer-text {
+  font-size: 15px;
+}
+
+.jumbotron .jumbotron-secondary h2{
+  font-size: 15px;
+}
+
 .jumbotron::before{
   background-color: rgba(0,0,0,0.3);
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: white;
-  text-shadow: 2px 2px #000;
 }
 .jumbotron p {
   color: white;
-  text-shadow: 2px 1px #000;
   margin-bottom: 15px;
-  font-size: 21px;
+  font-size: 25px;
+  font-weight: 200;
 
+}
+
+.jumbotron-secondary {
+  background-color: #70a093;
+}
+
+.jumbotron .jumbotron-secondary h1{
+  font-size: 30px;
+}
+
+.jumbotron .jumbotron-secondary h2{
+  font-size: 15px;
 }
 
 .shaded-background{
@@ -5004,8 +5045,10 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 45px;
+    font-weight: bold;
   }
+
 }
 .thumbnail {
   display: block;

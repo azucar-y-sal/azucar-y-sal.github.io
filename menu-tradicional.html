@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href='https://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
     <title>Azúcar y Sal</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
     <link href="dist/css/bootstrap-theme.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -45,14 +45,15 @@
             <div id="navbar" class="navbar-right navbar-collapse collapse" aria-expanded="true" style="">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Inicio</a></li>
-                <li class="dropdown">
+                <li><a href="eventos.html">Eventos</a></li>
+                <li class="dropdown active">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menús<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li class="active"><a href="menu-tradicional.html">Menú Tradicional</a></li>
+                    <li><a href="menu-vegetariano.html">Menú Vegetariano</a></li>
                     <li><a href="menu-navidad.html">Menú Navideño</a></li>
                   </ul>
                 </li>
-                <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="regalos-dulces.html">Regalos Dulces</a></li>
                 <li><a href="clases.html">Clases</a></li>
                 <li><a href="contacto1.html">Contacto</a></li>
@@ -61,137 +62,152 @@
           </div><!-- /.container -->
         </nav>
 
+        <div class="jumbotron jumbotron-secondary">
+          <div class="container">
+            <h1 class="text-center">Menú Tradicional</h1>
+            <p class="text-center">Comidas listas para servir. Nuestro menú tradicional está disponible todo el año.</p>
+          </div>
+        </div>
 
 
-   <div class="container marketing">
+
+        <div class="container ">
 
 
-  				<h1 class="page-header">Menú Tradicional</h1>
-          <h4 class="mv-plus pv">Nuestro menu tradicional está disponible todo el año.</h4>
+               <h2 >Botanas</h2>
 
-            <h3>Botanas</h3>
-            <div class="row">
+               <div class="row">
+                 <div class="col-lg-4 col-md-6 col-sm-6 tile-image">
+                   <img src="dist/img/mouse_chipotle.jpg" class="img-responsive" alt="Responsive image">
+                   <div class="tile-content">
+                     <h2 class="body-text">Mousse de chipotle</h2>
+                     <p>se acompaña de galleta tipo Melba salada</p>
+                   </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6 tile-image">
+                   <img src="dist/img/mousse.jpg" class="img-responsive" alt="Responsive image">
+                   <div class="tile-content">
+                     <h2 class="body-text">Mousse de cilantro</h2>
+                     <p>se acompaña de galleta tipo Melba salada</p>
+                   </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6 tile-image">
+                   <img src="dist/img/mousequeso.jpg" class="img-responsive" alt="Responsive image">
+                   <div class="tile-content">
+                     <h2 class="body-text">Mousse de queso</h2>
+                     <p>con frutos secos y jalea de chabacano</p>
+                   </div>
+                 </div>
 
-              <div class="col-lg-3 tile-image">
-                <img src="dist/img/mouse_chipotle.jpg" class="img-responsive" alt="Responsive image">
-                <div class="tile-content">
-                  <h4>Mousse de chipotle</h4>
-                  <p>se acompaña de galleta tipo Melba salada</p>
-                  <p class="price text-right">$150</p>
-                </div>
-              </div>
-              <div class="col-lg-3 tile-image">
-                <img src="dist/img/mousse.jpg" class="img-responsive" alt="Responsive image">
-                <div class="tile-content">
-                  <h4>Mousse de cilantro</h4>
-                  <p>se acompaña de galleta tipo Melba salada</p>
-                  <p class="price text-right">$160</p>
-                </div>
-              </div>
-              <div class="col-lg-3 tile-image">
-                <img src="dist/img/mousequeso.jpg" class="img-responsive" alt="Responsive image">
-                <div class="tile-content">
-                  <h4>Mousse de queso</h4>
-                  <p>con frutos secos y jalea de chabacano</p>
-                  <p class="price text-right">$170</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-3 tile-image">
-                <img src="dist/img/empanadas.jpg" class="img-responsive" alt="Responsive image">
-                <div class="tile-content">
-                  <h4>Empanadas</h4>
-                  <p>carne molida, elote con queso, jamón y queso</p>
-                  <p class="price text-right">$20 la pieza</p>
-                </div>
-              </div>
+               </div>
 
 
-            </div>
+               <div class="row">
+                 <div class="col-lg-4 col-md-6 col-sm-6 tile-image">
+                   <img src="dist/img/empanadas.jpg" class="img-responsive" alt="Responsive image">
+                   <div class="tile-content">
+                     <h2 class="body-text">Empanadas</h2>
+                     <p>carne molida, elote con queso, jamón y queso</p>
+                   </div>
+                 </div>
+
+               </div>
 
 
-            <h3>Ensaladas</h3>
-            <div class="row">
 
-              <div class="col-lg-3 tile-image">
-                <img src="dist/img/ensalada1.jpg" class="img-responsive" alt="Responsive image">
-                <div class="tile-content">
-                  <h4>Ensalada capresa</h4>
-                  <p>tomate con queso mozarella</p>
-                  <p class="price text-right">$150</p>
-                </div>
-              </div>
-              <div class="col-lg-3 tile-image">
-                <img src="dist/img/ensalada2.jpg" class="img-responsive" alt="Responsive image">
-                <div class="tile-content">
-                  <h4>Ensalada caesar</h4>
-                  <p>se acompaña de crutones de mantequilla</p>
-                  <p class="price text-right">$135</p>
-                </div>
-              </div>
-            </div>
+               <h2 class="mt-large pt-large">Ensaladas</h2>
 
-            <h3>Pastas</h3>
-            <div class="row">
+               <div class="row">
+                 <div class="col-lg-4 col-md-6 col-sm-6 tile-image">
+                   <img src="dist/img/ensalada1.jpg" class="img-responsive" alt="Responsive image">
+                   <div class="tile-content">
+                     <h2 class="body-text">Ensalada capresa</h2>
+                     <p>tomate con queso mozarella</p>
+                   </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6 tile-image">
+                   <img src="dist/img/ensalada2.jpg" class="img-responsive" alt="Responsive image">
+                   <div class="tile-content">
+                     <h2 class="body-text">Ensalada caesar</h2>
+                     <p>se acompaña de crutones de mantequilla</p>
+                   </div>
+                 </div>
 
-              <div class="col-lg-3 tile-image">
-                <img src="dist/img/ravioles2.jpg" class="img-responsive" alt="Responsive image">
-                <div class="tile-content">
-                  <h4>Ravioles al Pomodoro o Aurora</h4>
-                  <p>de carne, tres quesos, pollo al vino blanco, queso y espinaca</p>
-                  <p class="price text-right">$460 (sirve 6-8), $580 (sirve 10-12)</p>
-                </div>
-              </div>
-              <div class="col-lg-3 tile-image">
-                <img src="dist/img/lasagna.jpg" class="img-responsive" alt="Responsive image">
-                <div class="tile-content">
-                  <h4>Lasagna bolognesa</h4>
-                  <p>carne de res, salsa pomodoro, salsa bechamel y queso parmesano</p>
-                  <p class="price text-right">$350</p>
-                </div>
-              </div>
-              <div class="col-lg-3 tile-image">
-                <img src="dist/img/canelones.jpg" class="img-responsive" alt="Responsive image">
-                <div class="tile-content">
-                  <h4>Canelones bolognesa</h4>
-                  <p>carne de res, salsa bechamel, salsa aurora y queso parmesano</p>
-                  <p class="price text-right">$350</p>
-                </div>
-              </div>
-            </div>
+               </div>
 
-            <h3>Complementos</h3>
-            <div class="row">
 
-              <div class="col-lg-3 tile-image">
-                <img src="dist/img/relleno.jpg" class="img-responsive" alt="Responsive image">
-                <div class="tile-content">
-                  <h4>Relleno de pavo</h4>
-                  <p>carne de res, salsa pomodoro con maple, manzana, pasas y arándanos</p>
-                  <p class="price text-right">$320</p>
-                </div>
-              </div>
 
-            </div>
+               <h2 class="mt-large pt-large">Pastas</h2>
+               <div class="row">
 
-      <hr class="featurette-divider">
-      <!-- FOOTER -->
-      <footer>
-        <div class="row">
-          <div class="col-sm-9">&copy; 2015-2016 Azúcar y Sal </div>
-          <div class="col-sm-1"><a href="https://twitter.com/chef_cyn"><i class="fa fa-twitter fa-3x"></i></a></div>
-          <div class="col-sm-1"><a href="mailto:cynwhite87@gmail.com?Subject=Cotizacion Azucar y Sal"><i class="fa fa-envelope fa-3x"></i> </a></div>
-          <div class="col-sm-1"><a href="tel:5518256263"><i class="fa fa-phone fa-3x"></i></a></div>
+                 <div class="col-lg-4 col-md-6 col-sm-6 tile-image">
+                   <img src="dist/img/ravioles2.jpg" class="img-responsive" alt="Responsive image">
+                   <div class="tile-content">
+                     <h2 class="body-text">Ravioles al Pomodoro o Aurora</h2>
+                     <p>de carne, tres quesos, pollo al vino blanco, queso y espinaca</p>
+                   </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6 tile-image">
+                   <img src="dist/img/lasagna.jpg" class="img-responsive" alt="Responsive image">
+                   <div class="tile-content">
+                     <h2 class="body-text">Lasagna bolognesa</h2>
+                     <p>carne de res, salsa pomodoro, salsa bechamel y queso parmesano</p>
+                   </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6 tile-image">
+                   <img src="dist/img/canelones.jpg" class="img-responsive" alt="Responsive image">
+                   <div class="tile-content">
+                     <h2 class="body-text">Canelones bolognesa</h2>
+                     <p>carne de res, salsa bechamel, salsa aurora y queso parmesano</p>
+                   </div>
+                 </div>
+
+               </div>
+
+
+               <h2 class="mt-large pt-large">Complementos</h2>
+               <div class="row">
+
+                 <div class="col-lg-4 col-md-6 col-sm-6 tile-image">
+                   <img src="dist/img/relleno.jpg" class="img-responsive" alt="Responsive image">
+                   <div class="tile-content">
+                     <h2 class="body-text">Relleno de pavo</h2>
+                     <p>carne de res, salsa pomodoro con maple, manzana, pasas y arándanos</p>
+                   </div>
+                 </div>
+
+               </div>
+
+
 
         </div>
-      </footer>
-	</div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="dist/js/contactform.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-  </body>
-</html>
+                <!-- /END THE FEATURETTES -->
+
+          <hr class="featurette-divider">
+          <!-- FOOTER -->
+          <footer class="container">
+            <div class="row footer-text">
+              <div class="col-sm-9">&copy; Azúcar y Sal desde 2015 </div>
+              <div class="col-sm-3 text-right">
+                <a href="https://twitter.com/chef_cyn"><i class="fa fa-twitter fa-2x mh"></i></a>
+                <a href="mailto:cynwhite87@gmail.com?Subject=Cotizacion Azucar y Sal"><i class="fa fa-envelope fa-2x mr"></i> </a>
+                <a href="tel:5518256263"><i class="fa fa-phone fa-2x"></i></a>
+              </div>
+            </div>
+          </footer>
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="dist/js/bootstrap.min.js"></script>
+        <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+        <script src="assets/js/vendor/holder.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+      </body>
+    </html>
