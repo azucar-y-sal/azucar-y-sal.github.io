@@ -17,6 +17,8 @@
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
     <link href="dist/css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -78,30 +80,24 @@
           <div class="row justify-content-center">
       <div class="col-md-8">
           <div class="row">
-              <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                  <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+              <a href="dist/img/galeria-eventos-1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                  <img src="dist/img/galeria-eventos-1.jpg" class="img-fluid">
               </a>
-              <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                  <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
+              <a href="dist/img/galeria-eventos-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                  <img src="dist/img/galeria-eventos-2.jpg" class="img-fluid">
               </a>
-              <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                  <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
+              <a href="dist/img/galeria-eventos-3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                  <img src="dist/img/galeria-eventos-3.jpg" class="img-fluid">
               </a>
+
+
           </div>
           <div class="row">
-              <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                  <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
-              </a>
-              <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                  <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
-              </a>
-              <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                  <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
-              </a>
+
           </div>
       </div>
   </div>
-  
+
           </div>
 
 
@@ -131,10 +127,67 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
         <script src="dist/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+
         <script type="text/javascript">
-            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
+            $(document).ready(function ($) {
+                // delegate calls to data-toggle="lightbox"
+                $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"]):not([data-gallery="example-gallery-11"])', function(event) {
+                    event.preventDefault();
+                    return $(this).ekkoLightbox({
+                        onShown: function() {
+                            if (window.console) {
+                                return console.log('Checking our the events huh?');
+                            }
+                        },
+						onNavigate: function(direction, itemIndex) {
+                            if (window.console) {
+                                return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                            }
+						}
+                    });
+                });
+
+                // disable wrapping
+                $(document).on('click', '[data-toggle="lightbox"][data-gallery="example-gallery-11"]', function(event) {
+                    event.preventDefault();
+                    return $(this).ekkoLightbox({
+                        wrapping: false
+                    });
+                });
+
+                //Programmatically call
+                $('#open-image').click(function (e) {
+                    e.preventDefault();
+                    $(this).ekkoLightbox();
+                });
+                $('#open-youtube').click(function (e) {
+                    e.preventDefault();
+                    $(this).ekkoLightbox();
+                });
+
+				// navigateTo
+                $(document).on('click', '[data-toggle="lightbox"][data-gallery="navigateTo"]', function(event) {
+                    event.preventDefault();
+
+                    return $(this).ekkoLightbox({
+                        onShown: function() {
+
+							this.modal().on('click', '.modal-footer a', function(e) {
+
+								e.preventDefault();
+								this.navigateTo(2);
+
+                            }.bind(this));
+
+                        }
+                    });
+                });
+
+
+
             });
         </script>
         <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
